@@ -1,0 +1,20 @@
+/* Ẩn đường kẻ dọc (vertical grid lines) */
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+/* Giữ lại đường kẻ ngang (horizontal grid lines) */
+.chart-horizontal-grid-lines {
+    -fx-stroke: #dddddd;   /* Xám nhạt hơn nữa */
+    -fx-stroke-width: 1;   /* Độ dày 1px cho rõ hơn */
+    -fx-stroke-dash-array: none; /* Đường liền mạch */
+}
+
+/* Đảm bảo giá trị trục Y vẫn hiển thị bên trái */
+.axis:left {
+    -fx-tick-label-fill: black;  /* Màu chữ giá trị trục Y */
+    -fx-tick-length: 5px;        /* Độ dài gạch tick */
+}
+.default-color0.chart-bar {
+    -fx-bar-fill: #353A56;
+}

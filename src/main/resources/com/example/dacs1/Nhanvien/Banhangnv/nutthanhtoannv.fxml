@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="439.0" style="-fx-background-color: #353A56;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.NhanvienController.BHNVController.Xacnhannvcontroller">
+
+    <children>
+        <Label layoutX="50.0" layoutY="30.0" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;" text="Xác Nhận Thanh Toán" />
+
+        <Label layoutX="50.0" layoutY="80.0" style="-fx-text-fill: white;" text="Tên Khách Hàng:" />
+        <Label fx:id="lblTenKhach" layoutX="200.0" layoutY="80.0" style="-fx-text-fill: white;" text="..." />
+
+        <Label layoutX="50.0" layoutY="110.0" style="-fx-text-fill: white;" text="Số Điện Thoại:" />
+        <Label fx:id="lblSDT" layoutX="200.0" layoutY="110.0" style="-fx-text-fill: white;" text="..." />
+
+        <Label layoutX="50.0" layoutY="167.0" style="-fx-text-fill: white;" text="Sản Phẩm:" />
+
+        <Label layoutX="48.0" layoutY="140.0" style="-fx-text-fill: white;" text="Thời Gian Mua:" />
+        <Label fx:id="lblThoiGian" layoutX="200.0" layoutY="140.0" style="-fx-text-fill: white;" text="..." />
+
+        <Label layoutX="50.0" layoutY="255.0" style="-fx-text-fill: white;" text="Tổng Tiền:">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="lblTongTien" layoutX="200.0" layoutY="255.0" style="-fx-text-fill: white;" text="...">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+
+        <Button layoutX="71.0" layoutY="312.0" onAction="#handleXacNhan" style="-fx-background-color: #28A745; -fx-text-fill: white; -fx-border-radius: 10px;" text="Xác Nhận" />
+        <Button layoutX="153.0" layoutY="311.0" onAction="#handleHuy" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #DC3545; -fx-text-fill: white; -fx-border-radius: 10px;" text="Hủy" />
+        <Label fx:id="lblSanPham" layoutX="201.0" layoutY="167.0" text="..." textFill="WHITE" />
+    </children>
+</AnchorPane>

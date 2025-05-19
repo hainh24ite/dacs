@@ -1,0 +1,73 @@
+/* Reset toàn bộ style mặc định */
+.table-view {
+    -fx-background-color: white; /* Nền trắng */
+    -fx-font-family: "Arial"; /* Font chữ Arial */
+    -fx-table-cell-border-color: transparent; /* Ẩn viền ô */
+    -fx-table-header-border-color: transparent; /* Ẩn viền header */
+    -fx-background-insets: 0; /* Không khoảng cách nền */
+    -fx-padding: 0; /* Không padding */
+}
+
+/* Phần nền chung của header */
+.table-view .column-header-background {
+    -fx-background-color: #e0e0e0; /* Màu nền xám nhạt */
+    -fx-border-color: transparent; /* Ẩn viền */
+}
+
+/* Từng tiêu đề cột */
+.table-view .column-header {
+    -fx-background-color: transparent; /* Dùng màu từ column-header-background */
+    -fx-border-color: transparent; /* Ẩn viền */
+    -fx-text-fill: #333333; /* Màu chữ xám đậm */
+    -fx-font-weight: bold; /* Chữ đậm */
+    -fx-alignment: CENTER; /* Căn giữa nội dung */
+    -fx-padding: 8px 10px; /* Padding 8px top/bottom, 10px left/right */
+    -fx-size: 35px; /* Chiều cao cố định */
+}
+
+/* Text trong tiêu đề */
+.table-view .column-header .label {
+    -fx-alignment: CENTER; /* Căn giữa text */
+    -fx-text-fill: #333333; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ đậm */
+}
+
+/* Style cho các ô dữ liệu */
+.table-view .table-cell {
+    -fx-border-color: transparent; /* Ẩn viền ô */
+    -fx-padding: 8px 10px; /* Padding giống header */
+    -fx-alignment: CENTER; /* Căn trái */
+    -fx-text-fill: #333333; /* Màu chữ */
+    -fx-cell-size: 35px; /* Chiều cao hàng */
+}
+
+/* Chỉ giữ đường kẻ ngang mờ giữa các hàng */
+.table-view .table-row-cell {
+    -fx-border-color: #e0e0e0; /* Màu xám rất nhạt */
+    -fx-border-width: 0 0 1px 0; /* Chỉ hiển thị border dưới */
+    -fx-background-color: white; /* Nền trắng */
+    -fx-background-insets: 0; /* Không khoảng cách nền */
+    -fx-padding: 0; /* Không padding */
+}
+
+/* Tắt hiệu ứng xen kẽ màu */
+.table-view .table-row-cell:odd,
+.table-view .table-row-cell:even {
+    -fx-background-color: white; /* Tất cả hàng cùng màu trắng */
+}
+
+/* Hiệu ứng khi di chuột qua */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #f0f0f0 !important;
+}
+
+/* Style khi chọn hàng */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #d8e6f3; /* Màu xanh nhạt */
+    -fx-text-fill: black;
+}
+/*hàng đc chọn*/
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #d8e6f3; /* Giữ màu khi focus */
+    -fx-text-fill: black; /* Màu chữ */
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.NhanvienController.HDXNVController.ChitietHoadonxuatnv">
+    <top>
+        <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #353A56;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="251.0" layoutY="18.0" prefHeight="30.0" prefWidth="200.0" text="THÔNG TIN CHI TIẾT" textFill="#fcf9f9">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="270.0" prefWidth="693.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="35.0" layoutY="23.0" prefHeight="18.0" prefWidth="84.0" text="Khách hàng" />
+                <TextField fx:id="txtTenkhachhang" layoutX="36.0" layoutY="42.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Label layoutX="211.0" layoutY="23.0" text="Số điện thoại" />
+                <Label layoutX="388.0" layoutY="22.0" prefHeight="18.0" prefWidth="59.0" text="Sản phẩm" />
+                <TextField fx:id="txtGiaban" layoutX="266.0" layoutY="125.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Label layoutX="266.0" layoutY="107.0" prefHeight="18.0" prefWidth="59.0" text="Giá bán" />
+                <TextField fx:id="txtThoigianmua" layoutX="77.0" layoutY="125.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Button layoutX="289.0" layoutY="203.0" mnemonicParsing="false" onAction="#RoikhoiClick" prefHeight="27.0" prefWidth="109.0" style="-fx-background-color: #353A56; -fx-border-color: #c0c0c0;" text="Rời khỏi" textFill="WHITE" />
+                <TextField fx:id="txtTensanpham" layoutX="388.0" layoutY="42.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <TextField fx:id="txtSodienthoai" layoutX="211.0" layoutY="42.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Label layoutX="447.0" layoutY="108.0" text="Tổng tiền" />
+                <TextField fx:id="txtSoluong" layoutX="557.0" layoutY="42.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <TextField fx:id="txtTongtien" layoutX="447.0" layoutY="125.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Label layoutX="77.0" layoutY="107.0" prefHeight="18.0" prefWidth="80.0" text="Thời gian mua" />
+                <Label layoutX="557.0" layoutY="23.0" prefHeight="18.0" prefWidth="59.0" text="Số lượng" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

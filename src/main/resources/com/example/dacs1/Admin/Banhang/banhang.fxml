@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="669.0" prefWidth="930.0" style="-fx-background-color: #353A56;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.AdminController.BHController.BanHangController">
+
+    <children>
+        <ComboBox fx:id="comboSanPham" layoutX="14.0" layoutY="75.0" prefHeight="42.0" prefWidth="163.0" promptText="Chọn Sản Phẩm" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 5px;" />
+
+        <TextField fx:id="tfSoLuong" layoutX="193.0" layoutY="75.0" prefHeight="42.0" prefWidth="150.0" promptText="Số Lượng" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 5px;" />
+
+        <TextField fx:id="tfTenKhach" layoutX="359.0" layoutY="75.0" prefHeight="42.0" prefWidth="150.0" promptText="Tên Khách Hàng" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 5px;" />
+
+        <TextField fx:id="tfSDT" layoutX="524.0" layoutY="75.0" prefHeight="42.0" prefWidth="150.0" promptText="Số Điện Thoại" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 5px;" />
+
+        <TableView fx:id="tableHoaDon" layoutX="14.0" layoutY="129.0" prefHeight="366.0" prefWidth="904.0" stylesheets="@../../../../../style/tableview.css">
+            <columns>
+                <TableColumn fx:id="colSanPham" prefWidth="118.4" text="Sản Phẩm" />
+                <TableColumn fx:id="colSoLuong" prefWidth="85.5999755859375" text="Số Lượng" />
+                <TableColumn fx:id="colTenKhach" prefWidth="127.20001220703125" text="Tên Khách Hàng" />
+                <TableColumn fx:id="colSDT" prefWidth="153.60003662109375" text="Số Điện Thoại" />
+                <TableColumn fx:id="colThoiGian" prefWidth="132.800048828125" text="Thời Gian Mua" />
+                <TableColumn fx:id="colGiaBan" prefWidth="151.20001220703125" text="Giá Bán" />
+                <TableColumn fx:id="colThanhTien" prefWidth="131.2000732421875" text="Thành Tiền" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="691.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleThanhToan" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #28A745; -fx-font-weight: bold; -fx-border-radius: 10px; -fx-background-radius: 5px;" text="Thanh Toán" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+
+        <TextField fx:id="tfSoLuongMoi" layoutX="13.0" layoutY="511.0" prefHeight="34.0" prefWidth="150.0" promptText="Số Lượng Mới" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 5px;" />
+
+        <Button layoutX="175.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleSuaSoLuong" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #DC3545; -fx-border-radius: 10px; -fx-background-radius: 5px; -fx-font-weight: bold;" text="Sửa" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+
+        <Label alignment="CENTER" layoutX="356.0" layoutY="507.0" prefHeight="34.0" prefWidth="150.0" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="Tổng Tiền" />
+
+        <Label fx:id="lblTongTien" alignment="CENTER" layoutX="371.0" layoutY="540.0" prefHeight="27.0" prefWidth="130.0" style="-fx-text-fill: #FFD700; -fx-font-size: 18px; -fx-font-weight: bold;" text="0" />
+
+        <Button layoutX="13.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleXoaHoaDon" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #DC3545; -fx-border-radius: 10px; -fx-background-radius: 5px; -fx-font-weight: bold;" text="Xóa Hóa Đơn" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+
+        <Label alignment="CENTER" layoutX="194.0" prefHeight="74.0" prefWidth="481.0" style="-fx-text-fill: white; -fx-font-size: 30px; -fx-font-weight: bold;" text="THANH TOÁN KHÁCH HÀNG" />
+        <Button layoutX="691.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleNhap" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #28A745; -fx-font-weight: bold; -fx-border-radius: 10px; -fx-background-radius: 5px;" text="Nhập" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="930.0" style="-fx-background-color: #353A56;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.AdminController.HDXController.HoadonController">
+    <children>
+        <TableView fx:id="tableHoaDon" layoutX="12.0" layoutY="142.0" prefHeight="512.0" prefWidth="904.0" stylesheets="@../../../../../style/tableview.css">
+            <columns>
+                <TableColumn fx:id="colTenKhach" prefWidth="132.0" text="Khách Hàng" />
+                <TableColumn fx:id="colSoDT" prefWidth="127.199951171875" text="Số Điện Thoại" />
+                <TableColumn fx:id="colSanPham" prefWidth="142.39996337890625" text="Sản Phẩm" />
+                <TableColumn fx:id="colSoLuong" prefWidth="105.60003662109375" text="Số Lượng" />
+                <TableColumn fx:id="colThoiGian" prefWidth="127.20001220703125" text="Thời Gian Mua" />
+                <TableColumn fx:id="colGiaBan" prefWidth="131.20001220703125" text="Giá bán" />
+                <TableColumn fx:id="colTongTien" prefWidth="134.4000244140625" text="Tổng Tiền" />
+            </columns>
+        </TableView>
+      <AnchorPane layoutX="11.0" layoutY="13.0" prefHeight="110.0" prefWidth="904.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="84.0" layoutY="13.0" onMouseClicked="#chitietHoadonxuat" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/infomation.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="71.0" prefHeight="18.0" prefWidth="46.0" text="CHI TIẾT" />
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="7.0" layoutY="12.0" onMouseClicked="#xoaHoadonxuat" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/recycle-bin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="72.0" prefHeight="18.0" prefWidth="31.0" text="XÓA" />
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="747.0" style="-fx-background-color: #E6F7FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.DNController.DangNhapController">
+   <children>
+      <AnchorPane layoutX="86.0" layoutY="53.0" prefHeight="450.0" prefWidth="295.0" style="-fx-background-color: white; -fx-border-color: #E2E8F0; -fx-border-radius: 7; -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+         <children>
+            <TextField fx:id="txtTendangnhap" layoutX="14.0" layoutY="193.0" prefHeight="38.0" prefWidth="266.0" promptText="Tên đăng nhập" style="-fx-background-color: #F0F4F8; -fx-border-color: #E2E8F0; -fx-border-radius: 7; -fx-background-radius: 7; -fx-text-fill: #2D3748; -fx-padding: 10 10 10 40;" />
+            <PasswordField fx:id="txtMatkhau" layoutX="14.0" layoutY="240.0" prefHeight="38.0" prefWidth="266.0" promptText="Mật khẩu" style="-fx-background-color: #F0F4F8; -fx-background-radius: 7; -fx-border-color: #E2E8F0; -fx-border-radius: 7; -fx-text-fill: #2D3748; -fx-padding: 10 10 10 40;" />
+            <Button layoutX="14.0" layoutY="305.0" mnemonicParsing="false" onAction="#dangnhapClick" prefHeight="32.0" prefWidth="266.0" style="-fx-background-color: #1C86EE; -fx-background-radius: 10; -fx-text-fill: black;" text="Đăng nhập" />
+            <ImageView fitHeight="87.0" fitWidth="151.0" layoutX="98.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../image/admin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="17.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../image/personalized-support.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="17.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../image/eye.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="232.0" fitWidth="235.0" layoutX="432.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../image/take-a-break.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

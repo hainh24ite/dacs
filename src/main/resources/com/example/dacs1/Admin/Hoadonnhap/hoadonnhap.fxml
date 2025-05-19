@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="669.0" prefWidth="930.0" style="-fx-background-color: #353A56;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.AdminController.HDNController.HoaDonNhap">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="26.0" prefHeight="110.0" prefWidth="899.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="15.0" layoutY="11.0" onMouseClicked="#xoaHoadonnhap" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/recycle-bin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="69.0" text="XÓA" />
+            <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="95.0" layoutY="14.0" onMouseClicked="#chitietHoadonnhap" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/infomation.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="67.0" text="CHI TIẾT" />
+         </children></AnchorPane>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="157.0" prefHeight="495.0" prefWidth="899.0" stylesheets="@../../../../../style/tableview.css">
+         <columns>
+            <TableColumn fx:id="colTenSanPham" prefWidth="166.39999771118164" text="Tên Sản Phẩm" />
+            <TableColumn fx:id="colSoLuong" prefWidth="81.59999084472656" text="Số Lượng" />
+            <TableColumn fx:id="colThoiGian" prefWidth="133.60003662109375" text="Thời gian mua" />
+            <TableColumn fx:id="colGiaNhap" prefWidth="184.800048828125" text="Giá Nhập" />
+            <TableColumn fx:id="colGiaBan" minWidth="0.0" prefWidth="167.99993896484375" text="Giá Bán " />
+            <TableColumn fx:id="colTongTien" prefWidth="164.0" text="Tổng Tiền Nhập" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

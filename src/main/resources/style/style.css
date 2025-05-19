@@ -1,0 +1,23 @@
+/* Loại bỏ viền xung quanh các tab */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+/* Loại bỏ viền xung quanh từng tab */
+.tab {
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Loại bỏ viền khi tab được chọn */
+.tab:selected {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: transparent;
+}
+
+/* Loại bỏ đường gạch dưới khi tab được chọn */
+.tab-pane .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}

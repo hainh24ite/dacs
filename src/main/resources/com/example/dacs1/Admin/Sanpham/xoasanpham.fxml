@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.AdminController.SPController.DeleteSanphamController">
+    <top>
+        <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #353A56;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="285.0" layoutY="14.0" prefHeight="30.0" prefWidth="172.0" text="XÓA SẢN PHẨM" textFill="#fcf9f9">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="115.0" layoutY="14.0" prefHeight="18.0" prefWidth="84.0" text="Tìm kiếm" />
+                <TextField fx:id="txtTimKiem" layoutX="115.0" layoutY="32.0" prefHeight="36.0" prefWidth="400.0" promptText="Nhập tên hoặc mã sản phẩm để tìm kiếm" style="-fx-background-color: white; -fx-border-color: #c0c0c0;" />
+                <Button layoutX="530.0" layoutY="32.0" mnemonicParsing="false" onAction="#searchClick" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #353A56; -fx-border-color: #c0c0c0;" text="Tìm kiếm" textFill="WHITE" />
+
+                <TableView fx:id="tableSanPham" layoutX="-2.0" layoutY="79.0" prefHeight="267.0" prefWidth="800.0" stylesheets="@../../../../../style/tableview.css">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="97.59997713565826" text="STT" />
+                        <TableColumn fx:id="colTenSanPham" prefWidth="144.79998016357422" text="Tên sản phẩm" />
+                        <TableColumn fx:id="colThuongHieu" minWidth="0.0" prefWidth="120.0" text="Thương Hiệu" />
+                        <TableColumn fx:id="colHeDieuHanh" minWidth="0.0" prefWidth="135.20001220703125" text="Hệ điều hành" />
+                        <TableColumn fx:id="colChipXuLy" minWidth="0.0" prefWidth="145.60000610351562" text="Chip Xử Lý" />
+                        <TableColumn fx:id="colXuatXu" minWidth="0.0" prefWidth="154.39996337890625" text="Xuất Xứ" />
+                    </columns>
+                </TableView>
+
+                <HBox alignment="CENTER" layoutX="200.0" layoutY="360.0" prefHeight="50.0" prefWidth="400.0" spacing="30.0">
+                    <Button fx:id="btnXoa" mnemonicParsing="false" onAction="#DeleteClick" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #353A56; -fx-border-color: #c0c0c0;" text="Xóa sản phẩm" textFill="WHITE" />
+                    <Button fx:id="btnHuy" mnemonicParsing="false" onAction="#cancelDelete" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #353A56; -fx-border-color: #c0c0c0;" text="Hủy bỏ" textFill="WHITE" />
+                </HBox>
+
+                <Label fx:id="lblThongBao" alignment="CENTER" layoutX="200.0" layoutY="420.0" prefHeight="20.0" prefWidth="400.0" textFill="#ee6363">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

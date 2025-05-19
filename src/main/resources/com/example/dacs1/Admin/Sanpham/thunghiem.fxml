@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="669.0" prefWidth="930.0" style="-fx-background-color: #353A56;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.AdminController.SPController.sanphamcontroller">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="18.0" prefHeight="98.0" prefWidth="902.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <ImageView fx:id="add1" fitHeight="46.0" fitWidth="41.0" layoutX="9.0" layoutY="11.0" onDragDetected="#AddClick" onMouseClicked="#AddClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/plus.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="56.0" text="THÊM" />
+            <ImageView fx:id="update1" fitHeight="41.0" fitWidth="59.0" layoutX="74.0" layoutY="11.0" onDragDetected="#UpdateClick" onMouseClicked="#UpdateClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/pencil.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="56.0" text="SỬA" />
+            <ImageView fx:id="delete1" fitHeight="50.0" fitWidth="41.0" layoutX="140.0" layoutY="11.0" onDragDetected="#DeleteClick" onMouseClicked="#DeleteClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/recycle-bin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="149.0" layoutY="56.0" text="XÓA" />
+            <Label layoutX="208.0" layoutY="56.0" text="CHI TIẾT" />
+            <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="206.0" layoutY="7.0" onDragDetected="#DetailClick" onMouseClicked="#DetailClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/infomation.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtTimKiem" layoutX="391.0" layoutY="25.0" prefHeight="38.0" prefWidth="202.0" promptText="Nhập nội dung tìm kiếm" />
+            <Button layoutX="614.0" layoutY="25.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="38.0" prefWidth="94.0" style="-fx-background-radius: 10px; -fx-padding: 8 20; -fx-background-color: #33CCFF;" text="Tìm Kiếm" />
+            <Button layoutX="723.0" layoutY="26.0" mnemonicParsing="false" onAction="#ResetButton" prefHeight="38.0" prefWidth="109.0" style="-fx-background-radius: 10px; -fx-padding: 8 20; -fx-background-color: #33CCFF;" text="Làm mới" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="132.0" prefHeight="522.0" prefWidth="902.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tableSanPham" layoutY="7.0" prefHeight="544.0" prefWidth="902.0" stylesheets="@../../../../../style/tableview.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="46.39999294281006" text="STT" />
+                  <TableColumn fx:id="colTenSanPham" prefWidth="104.79999160766602" text="Tên sản phẩm" />
+                  <TableColumn fx:id="colSoLuong" prefWidth="76.00003051757812" text="Số lượng" />
+                  <TableColumn fx:id="colThuongHieu" prefWidth="99.99998474121094" text="Thương Hiệu" />
+                  <TableColumn fx:id="colHeDieuHanh" prefWidth="104.79998779296875" text="Hệ điều hành" />
+                  <TableColumn fx:id="colKichThuocMan" prefWidth="116.79998779296875" text="Kích thước màn" />
+                  <TableColumn fx:id="colChipXuLy" prefWidth="92.79998779296875" text="Chip xử lý" />
+                  <TableColumn fx:id="colDungLuongPin" prefWidth="113.5999755859375" text="Dung lượng pin" />
+                  <TableColumn fx:id="colXuatXu" minWidth="0.0" prefWidth="69.60009765625" text="Xuất Xứ" />
+                  <TableColumn fx:id="colGiaBan" prefWidth="74.4000244140625" text="Giá Bán" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

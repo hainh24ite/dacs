@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1120.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dacs1.MainController">
+
+   <children>
+      <SplitPane dividerPositions="0.172" layoutX="-3.0" layoutY="1.0" prefHeight="669.0" prefWidth="1120.0">
+         <items>
+            <!-- Sidebar -->
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="669.0" prefWidth="170.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-style: solid;">
+               <children>
+
+                  <Button fx:id="btnSanPham" layoutX="10.0" layoutY="131.0" onAction="#SanPham" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Sản Phẩm" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+
+                  <Button fx:id="btnBanHang" layoutX="10.0" layoutY="203.0" onAction="#handleBanHang" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Bán Hàng" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+
+                  <Button fx:id="btnTaiKhoan" layoutX="10.0" layoutY="403.0" onAction="#handletaikhoan" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Tài Khoản" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+
+                  <Button layoutX="10.0" layoutY="600.0" onAction="#handleLogout" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #E74C3C; -fx-background-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid;" text="Đăng Xuất" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+                  <Button fx:id="btnThongKe" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleThongKe" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Thống Kê" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+                  <Button fx:id="btnHoaDonXuat" layoutX="10.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleXemHoaDon" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Hóa Đơn Xuất" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+                  <Button fx:id="btnHoaDonNhap" layoutX="10.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleXemHoaNhap" prefHeight="51.0" prefWidth="162.5" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Hóa Đơn Nhập" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+                  <AnchorPane layoutX="10.0" layoutY="28.0" prefHeight="62.0" prefWidth="167.0" style="-fx-background-color: #748CF1; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-style: solid; -fx-border-color: #748CF1;">
+                     <children>
+                        <Label layoutX="75.0" layoutY="9.0" prefHeight="43.0" prefWidth="82.0" text="Admin" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/programmer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="10.0" layoutY="535.0" mnemonicParsing="false" onAction="#openchat" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #353A56; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px; -fx-border-style: solid; -fx-border-color: #303551;" text="Chat" textFill="#faf8f8">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+
+            <!-- Main Content -->
+            <AnchorPane fx:id="mainContent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="669.0" prefWidth="950.0" style="-fx-background-color: #353A56;">
+               <children>
+                  <AnchorPane layoutX="11.0" layoutY="17.0" prefHeight="640.0" prefWidth="902.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="194.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/bird_2-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="174.0" layoutY="34.0" prefHeight="78.0" prefWidth="229.0" text="Xin chào!">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="187.0" fitWidth="891.0" layoutY="112.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../image/5976015.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="47.0" layoutY="330.0" prefHeight="43.0" prefWidth="392.0" text="Cửa hàng IT-nơi công nghệ kết nối đam mê.">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="364.0" prefHeight="51.0" prefWidth="320.0" text="Chúc bạn có trải nghiệm vui vẻ^_^">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="335.0" layoutY="447.0" prefHeight="27.0" prefWidth="69.0" text="Liên hệ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="52.0" layoutY="474.0" prefHeight="132.0" prefWidth="786.0" style="-fx-border-style: solid; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="53.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/call.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="53.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/gmail.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="20.0" fitWidth="26.0" layoutX="53.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/house.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="50.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/calendar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="95.0" layoutY="12.0" prefHeight="18.0" prefWidth="309.0" text="Số điện thoại: 0362024999" />
+                              <Label layoutX="95.0" layoutY="39.0" prefHeight="18.0" prefWidth="309.0" text="Email:nhh@vku.udn.vn" />
+                              <Label layoutX="95.0" layoutY="68.0" prefHeight="18.0" prefWidth="309.0" text="Địa chỉ: Ngũ Hành Sơn,Đà Nẵng" />
+                              <Label layoutX="95.0" layoutY="97.0" prefHeight="18.0" prefWidth="309.0" text="Thời gian làm việc: 8:00 AM - 9:00 PM (Thứ Hai - Thứ Bảy)" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

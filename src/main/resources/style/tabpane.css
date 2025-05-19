@@ -1,0 +1,9 @@
+.tab-pane > .tab-header-area > .headers-region {
+    -fx-alignment: center;
+}
+
+/* Căn giữa nội dung trong từng tab header */
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-alignment: center;
+    -fx-padding: 0 110px; /* Điều chỉnh khoảng cách giữa các tab */
+}
